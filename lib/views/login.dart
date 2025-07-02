@@ -297,7 +297,7 @@ class _LoginState extends State<Login> {
                         Text("Don't have an account?"),
                         TextButton(
                           onPressed: () {
-                            Navigator.pushReplacementNamed(context, '/Sign_Up');
+                            Navigator.pushReplacementNamed(context, '/sign-up');
                           },
                           child: Text(
                             "Sign Up",

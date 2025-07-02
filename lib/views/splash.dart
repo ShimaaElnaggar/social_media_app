@@ -18,7 +18,7 @@ class _SplashViewState extends State<SplashView> {
   }
 
   void navigate() {
-    Timer(const Duration(seconds: 4), () {
+    Timer(const Duration(milliseconds: 4500), () {
       Navigator.pushReplacementNamed(context, '/sign-up');
     });
   }

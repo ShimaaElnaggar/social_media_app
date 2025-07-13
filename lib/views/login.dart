@@ -44,9 +44,7 @@ class _LoginState extends State<Login> {
         idToken: googleAuth.idToken,
       );
 
-      final login = await FirebaseAuth.instance.signInWithCredential(
-        credential,
-      );
+      await FirebaseAuth.instance.signInWithCredential(credential);
       saveUserData(FirebaseAuth.instance.currentUser!);
       Navigator.pushReplacementNamed(context, '/home');
     } catch (e) {

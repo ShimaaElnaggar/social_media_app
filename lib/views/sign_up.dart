@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:social_media_app/helper/show_snack_bar.dart';
 import 'package:social_media_app/services/prefrences_services.dart';
 import 'package:social_media_app/utils/color_utility.dart';

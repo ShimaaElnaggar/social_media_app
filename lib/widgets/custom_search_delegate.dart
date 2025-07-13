@@ -31,8 +31,9 @@ class PostSearchDelegate extends SearchDelegate {
           .orderBy('timestamp', descending: true)
           .get(),
       builder: (context, snapshot) {
-        if (!snapshot.hasData)
+        if (!snapshot.hasData) {
           return Center(child: CircularProgressIndicator());
+        }
 
         final allPosts = snapshot.data!.docs.where((doc) {
           final title = doc['title']?.toString().toLowerCase() ?? '';

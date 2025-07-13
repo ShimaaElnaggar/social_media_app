@@ -8,9 +8,11 @@ import 'package:social_media_app/views/login.dart';
 import 'package:social_media_app/views/profile.dart';
 import 'package:social_media_app/views/sign_up.dart';
 import 'package:social_media_app/views/splash.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load();
   await PreferencesServices.initPreferences();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
